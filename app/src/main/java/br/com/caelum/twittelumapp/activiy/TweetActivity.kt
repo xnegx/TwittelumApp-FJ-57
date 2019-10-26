@@ -24,6 +24,6 @@ class TweetActivity : AppCompatActivity() {
 
         val mensagemDoTweet : String = campoDeMensagemDoTweet.text.toString()
 
-        Toast.makeText(this, mensagemDoTweet, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, mensagemDoTweet, Toast.LENGTH_LONG).show()
     }
 }
