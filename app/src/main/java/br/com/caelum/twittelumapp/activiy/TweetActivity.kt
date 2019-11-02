@@ -1,12 +1,12 @@
-package br.com.caelum.twittelumapp
+package br.com.caelum.twittelumapp.activiy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import br.com.caelum.twittelumapp.R
 
 class TweetActivity : AppCompatActivity() {
 

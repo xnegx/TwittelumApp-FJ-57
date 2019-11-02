@@ -4,17 +4,20 @@ import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import br.com.caelum.twittelumapp.R
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_lista.*
 
 class ListaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.actovoty_lista)
+        setContentView(R.layout.activity_lista)
 
-        val tweets = listOf("Meu primeiro tweet", "Meu segundo tweet", "Meu terceiro tweet")
+        val tweets = listOf("Bla", "Ble", "Bli", "Blo", "Blu")
 
-        val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tweets)
+        val adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,tweets)
 
-        lista_tweet.adapter = adapter
+        lista_tweets.adapter = adapter
+
+        fab_add.setOnClickListener { Snackbar.make(it,"FAB clicado", Snackbar.LENGTH_LONG).show() }
     }
 }
